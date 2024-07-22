@@ -25,7 +25,7 @@ resource "null_resource" "this" {
   // Kafka
   provisioner "local-exec" {
     when    = create
-    command = "docker compose -f ./docker/docker-compose.yml up -d"
+    command = "docker compose -f ./_docker/docker-compose.yml up -d"
   }
 
   // MongoDB
