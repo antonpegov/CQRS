@@ -9,9 +9,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>account-query</module>
-        <module>account-command</module>
-        <module>account-common</module>
         <module>../cqrs-core</module>
+        <module>account-common</module>
+        <module>account-command</module>
+        <module>account-query</module>
     </modules>
 </project>

@@ -1,6 +1,6 @@
-package com.cqrs.commands;
+package com.cqrs.core.commands;
 
-import com.cqrs.messages.Message;
+import com.cqrs.core.messages.Message;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
