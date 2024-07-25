@@ -3,3 +3,5 @@ terraform*
 tfplan
 
 .vscode
+
+.semanticgraphs
