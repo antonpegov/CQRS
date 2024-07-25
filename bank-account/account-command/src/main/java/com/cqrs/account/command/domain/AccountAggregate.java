@@ -1,6 +1,7 @@
 package com.cqrs.account.command.domain;
 
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
@@ -13,11 +14,10 @@ import com.cqrs.account.common.events.FundsWithdrownEvent;
 
 import com.cqrs.core.domain.AggregateRoot;
 
-@Data
 @NoArgsConstructor
 public class AccountAggregate extends AggregateRoot {
-    private boolean active;
-    private double balance;
+    private @Getter boolean active;
+    private @Getter double balance;
 
     public AccountAggregate(OpenAccountCommand command) {
         riseEvent(AccountOpenedEvent.builder()

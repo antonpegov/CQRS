@@ -10,7 +10,6 @@ import java.util.List;
 
 import java.text.MessageFormat;
 
-// AgregateRoot is an entity within the Agregate, that responsible for keeping the consistency of the Agregate.
 public abstract class AggregateRoot {
     protected String id;
     private int version = -1;
