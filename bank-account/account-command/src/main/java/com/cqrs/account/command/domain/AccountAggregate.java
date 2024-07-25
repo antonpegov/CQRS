@@ -1,6 +1,7 @@
 package com.cqrs.account.command.domain;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
@@ -9,9 +10,11 @@ import com.cqrs.account.common.events.AccountClosedEvent;
 import com.cqrs.account.common.events.AccountOpenedEvent;
 import com.cqrs.account.common.events.FundsDepositedEvent;
 import com.cqrs.account.common.events.FundsWithdrownEvent;
+
 import com.cqrs.core.domain.AggregateRoot;
 
 @Data
+@NoArgsConstructor
 public class AccountAggregate extends AggregateRoot {
     private boolean active;
     private double balance;
