@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.apache.kafka.shaded.io.opentelemetry.proto.trace.v1.Span.Event;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.cqrs.account.command.domain.AccountAggregate;
 import com.cqrs.account.command.domain.EventStoreRepository;
@@ -15,13 +16,14 @@ import com.cqrs.core.exceptions.AggregateNotFoundException;
 import com.cqrs.core.exceptions.ConcurrencyException;
 import com.cqrs.core.infrastructure.EventStore;
 
+@Service
 public class AccountEventStore implements EventStore {
     @Autowired
     private EventStoreRepository eventStoreRepository;
 
     @Override
     public void saveEvents(String aggregateId, Iterable<BaseEvent> events, int expectedVersion) {
-        var persistedEvents = eventStoreRepository.findByAggregateId(aggregateId);
+        var persistedEvents = eventStoreRepository.findByAggregateIdentifier(aggregateId);
 
         if (expectedVersion != -1 && expectedVersion != persistedEvents.get(persistedEvents.size() - 1).getVersion()) {
             throw new ConcurrencyException("Concurrency issue: the version of the aggregate is not correct");
@@ -55,7 +57,7 @@ public class AccountEventStore implements EventStore {
 
     @Override
     public List<BaseEvent> getEventsForAggregate(String aggregateId) {
-        var events = eventStoreRepository.findByAggregateId(aggregateId);
+        var events = eventStoreRepository.findByAggregateIdentifier(aggregateId);
 
         if (events == null || events.isEmpty()) {
             throw new AggregateNotFoundException("Incorect account id provided!");

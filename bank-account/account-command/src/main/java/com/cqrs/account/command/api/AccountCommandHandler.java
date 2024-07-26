@@ -1,10 +1,12 @@
 package com.cqrs.account.command.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.cqrs.account.command.domain.AccountAggregate;
 import com.cqrs.core.handlers.EventSourcingHandler;
 
+@Service
 public class AccountCommandHandler implements CommandHandler {
     @Autowired
     private EventSourcingHandler<AccountAggregate> eventSourcingHandler;

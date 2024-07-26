@@ -9,5 +9,5 @@ import com.cqrs.core.events.EventModel;
 
 @Repository
 public interface EventStoreRepository extends MongoRepository<EventModel, String> {
-    List<EventModel> findByAggregateId(String aggregateIdentifier);
+    List<EventModel> findByAggregateIdentifier(String aggregateIdentifier);
 }
