@@ -11,8 +11,8 @@
 	<groupId>com.cqrs</groupId>
 	<artifactId>account.query</artifactId>
 	<version>0.0.1</version>
-	<name>CQRS :: Bank Account Query</name>
-	<description>Bank Account Query Project</description>
+	<name>CQRS :: Funding Account Query</name>
+	<description>Funding Account Query Project</description>
 	<url/>
 	<licenses>
 		<license/>

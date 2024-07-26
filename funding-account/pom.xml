@@ -3,9 +3,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
     <groupId>com.cqrs</groupId>
-    <artifactId>bank-account</artifactId>
+    <artifactId>funding-account</artifactId>
     <version>0.0.1</version>
-    <name>Bank Account</name>
+    <name>Funding Account</name>
     <packaging>pom</packaging>
 
     <modules>

@@ -11,8 +11,8 @@
 	<groupId>com.cqrs</groupId>
 	<artifactId>account.common</artifactId>
 	<version>0.0.1</version>
-	<name>CQRS :: Bank Account Common</name>
-	<description>Bank Account Common Project</description>
+	<name>CQRS :: Funding Account Common</name>
+	<description>Funding Account Common Project</description>
 	<url/>
 	<licenses>
 		<license/>

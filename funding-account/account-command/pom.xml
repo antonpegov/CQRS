@@ -11,8 +11,8 @@
 	<groupId>com.cqrs</groupId>
 	<artifactId>account.command</artifactId>
 	<version>0.0.1</version>
-	<name>CQRS :: Bank Account Command</name>
-	<description>Bank Account Command Project</description>
+	<name>CQRS :: Funding Account Command</name>
+	<description>Funding Account Command Project</description>
 	<url/>
 	<licenses>
 		<license/>
