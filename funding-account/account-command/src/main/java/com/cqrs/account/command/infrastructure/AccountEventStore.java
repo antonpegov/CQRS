@@ -3,7 +3,6 @@ package com.cqrs.account.command.infrastructure;
 import java.util.Date;
 import java.util.List;
 
-import org.apache.kafka.shaded.io.opentelemetry.proto.trace.v1.Span.Event;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

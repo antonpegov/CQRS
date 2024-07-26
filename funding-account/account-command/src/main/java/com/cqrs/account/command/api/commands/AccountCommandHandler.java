@@ -1,4 +1,4 @@
-package com.cqrs.account.command.api;
+package com.cqrs.account.command.api.commands;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

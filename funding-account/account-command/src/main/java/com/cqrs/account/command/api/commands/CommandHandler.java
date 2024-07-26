@@ -1,4 +1,4 @@
-package com.cqrs.account.command.api;
+package com.cqrs.account.command.api.commands;
 
 public interface CommandHandler {
     void handle(OpenAccountCommand command);

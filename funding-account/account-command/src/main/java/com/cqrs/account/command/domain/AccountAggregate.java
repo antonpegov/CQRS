@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-import com.cqrs.account.command.api.OpenAccountCommand;
+import com.cqrs.account.command.api.commands.OpenAccountCommand;
 import com.cqrs.account.common.events.AccountClosedEvent;
 import com.cqrs.account.common.events.AccountOpenedEvent;
 import com.cqrs.account.common.events.FundsDepositedEvent;

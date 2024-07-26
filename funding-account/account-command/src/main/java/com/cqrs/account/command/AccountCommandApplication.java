@@ -8,11 +8,11 @@ import com.cqrs.core.infrastructure.CommandDispatcher;
 
 import jakarta.annotation.PostConstruct;
 
-import com.cqrs.account.command.api.CloseAccountCommand;
-import com.cqrs.account.command.api.CommandHandler;
-import com.cqrs.account.command.api.DepositFundsCommand;
-import com.cqrs.account.command.api.OpenAccountCommand;
-import com.cqrs.account.command.api.WithdrawFundsCommand;
+import com.cqrs.account.command.api.commands.CloseAccountCommand;
+import com.cqrs.account.command.api.commands.CommandHandler;
+import com.cqrs.account.command.api.commands.DepositFundsCommand;
+import com.cqrs.account.command.api.commands.OpenAccountCommand;
+import com.cqrs.account.command.api.commands.WithdrawFundsCommand;
 
 @SpringBootApplication
 public class AccountCommandApplication {

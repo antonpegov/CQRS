@@ -1,4 +1,4 @@
-package com.cqrs.account.command.api;
+package com.cqrs.account.command.api.commands;
 
 import com.cqrs.core.commands.BaseCommand;
 
